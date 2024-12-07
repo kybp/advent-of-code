@@ -1,0 +1,22 @@
+        DIGIT   = ANY('0123456789')
+        NUMBER  = DIGIT | DIGIT DIGIT | DIGIT DIGIT DIGIT
+        MUL     = 'mul(' NUMBER . X ',' NUMBER . Y ')'
+        ENABLE  = 'do()'
+        DISABLE = "don't()"
+        OP      = MUL | ENABLE | DISABLE
+
+        COUNTP = 'YES'
+        SUM    = 0
+
+NEXTL   LINE               = INPUT               :F(DONE)
+NEXTW   LINE ARB OP . TERM =                     :F(NEXTL)
+        TERM ENABLE                              :S(ENABLE)
+        TERM DISABLE                             :S(DISABLE)
+        COUNTP 'YES'                             :F(NEXTW)
+        SUM                = SUM + X * Y         :(NEXTW)
+ENABLE  COUNTP             = 'YES'               :(NEXTW)
+DISABLE COUNTP             =                     :(NEXTW)
+
+DONE    OUTPUT = SUM
+
+END

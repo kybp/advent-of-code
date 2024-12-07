@@ -1,0 +1,13 @@
+        DIGIT  = ANY('0123456789')
+        NUMBER = DIGIT | DIGIT DIGIT | DIGIT DIGIT DIGIT
+        MUL    = 'mul(' NUMBER . X ',' NUMBER . Y ')'
+
+        SUM = 0
+
+NEXTL   LINE         = INPUT                     :F(DONE)
+NEXTW   LINE ARB MUL =                           :F(NEXTL)
+        SUM          = SUM + X * Y               :(NEXTW)
+
+DONE    OUTPUT = SUM
+
+END
