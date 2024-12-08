@@ -1,7 +1,7 @@
 % X-Y is violated if it's a constraint and X appears after Y in L.
-violations(L, [X-Y|Constraints], [X-Y|Violations]) :-
-    after(X, Y, L),
-    violations(L, Constraints, Violations).
+violations(Update, [X-Y|Constraints], [X-Y|Violations]) :-
+    after(X, Y, Update),
+    violations(Update, Constraints, Violations).
 violations(Updates, [X-Y|Constraints], Violations) :-
     \+ after(X, Y, Updates),
     violations(Updates, Constraints, Violations).

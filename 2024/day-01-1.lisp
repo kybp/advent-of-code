@@ -12,4 +12,4 @@
           collect y into list2
           finally (return (list list1 list2)))))
 
-(print (apply #'list-difference (read-lists "2024/input/day-01.txt")))
+(format t "~&~a~%" (apply #'list-difference (read-lists "2024/input/day-01.txt")))
