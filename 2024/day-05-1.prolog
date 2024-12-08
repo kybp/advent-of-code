@@ -54,7 +54,7 @@ read_updates(Stream, Updates) :-
     ).
 
 main :-
-    open('input.txt', read, Stream),
+    open('2024/input/day-05.txt', read, Stream),
     read_constraints(Stream, Constraints),
     read_updates(Stream, Updates),
     close(Stream),

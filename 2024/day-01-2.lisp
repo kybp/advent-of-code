@@ -22,4 +22,4 @@
           collect y into list2
           finally (return (list list1 list2)))))
 
-(print (apply #'similarity (read-lists "input.txt")))
+(print (apply #'similarity (read-lists "2024/input/day-01.txt")))

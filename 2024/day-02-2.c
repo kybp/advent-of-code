@@ -75,5 +75,5 @@ int count_safe_reports(const char *filename)
 
 int main(void)
 {
-    printf("%d\n", count_safe_reports("input.txt"));
+    printf("%d\n", count_safe_reports("2024/input/day-02.txt"));
 }

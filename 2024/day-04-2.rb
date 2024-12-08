@@ -41,6 +41,6 @@ class WordFinder
   end
 end
 
-lines = File.readlines('input.txt', chomp: true)
+lines = File.readlines('2024/input/day-04.txt', chomp: true)
 grid = lines.map { _1.split('') }
 puts WordFinder.new('MAS', grid).count
