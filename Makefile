@@ -40,6 +40,12 @@
 2024-05-2:
 	swipl -g main -t halt 2024/day-05-2.prolog
 
+.PHONY: 2024-06-1
+2024-06-1:
+	nasm -f elf64 2024/day-06-1.s -o output/2024-06-1.o
+	ld output/2024-06-1.o -o output/2024-06-1
+	./output/2024-06-1
+
 .PHONY: 2024-07-1
 2024-07-1:
 	runhaskell 2024/day-07-1.hs
