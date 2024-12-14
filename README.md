@@ -10,8 +10,9 @@ for, like `2024/input/day-01.txt`. Then run (for this example) `make
 
 To run all the solutions, you'll need:
 
-- sbcl
+- SBCL
 - C compiler
 - snobol4 (CSNOBOL4B)
 - Ruby 2.7+
 - SWI-Prolog
+- GHC

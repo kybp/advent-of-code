@@ -39,3 +39,11 @@
 .PHONY: 2024-05-2
 2024-05-2:
 	swipl -g main -t halt 2024/day-05-2.prolog
+
+.PHONY: 2024-07-1
+2024-07-1:
+	runhaskell 2024/day-07-1.hs
+
+.PHONY: 2024-07-2
+2024-07-2:
+	runhaskell 2024/day-07-2.hs
