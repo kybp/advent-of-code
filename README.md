@@ -15,4 +15,6 @@ To run all the solutions, you'll need:
 - snobol4 (CSNOBOL4B)
 - Ruby 2.7+
 - SWI-Prolog
+- NASM on 64-bit Linux
 - GHC
+- Java 8+
