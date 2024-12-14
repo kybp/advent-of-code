@@ -47,3 +47,7 @@
 .PHONY: 2024-07-2
 2024-07-2:
 	runhaskell 2024/day-07-2.hs
+
+.PHONY: 2024-08-1
+2024-08-1:
+	java 2024/day-08-1.java
