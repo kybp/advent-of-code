@@ -2,7 +2,6 @@ import java.io.IOException;
 import java.nio.file.Files;
 import java.nio.file.Path;
 import java.util.*;
-import java.util.stream.Collectors;
 import java.util.stream.Stream;
 
 public class AntinodeCounter {
@@ -44,7 +43,6 @@ public class AntinodeCounter {
     }
 
     public int countAntinodes() {
-        int antinodeCount = 0;
         Set<Point> antinodes = new HashSet<>();
 
         for (char frequency : antennas.keySet()) {
@@ -118,10 +116,5 @@ class Point {
     @Override
     public int hashCode() {
         return Objects.hash(x, y);
-    }
-
-    @Override
-    public String toString() {
-        return "Point{" + "x=" + x + ", y=" + y + '}';
     }
 }
