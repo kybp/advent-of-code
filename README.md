@@ -18,3 +18,4 @@ To run all the solutions, you'll need:
 - NASM on 64-bit Linux
 - GHC
 - Java 8+
+- Guile 2.0+
