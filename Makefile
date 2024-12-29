@@ -69,3 +69,13 @@
 .PHONY: 2024-09-2
 2024-09-2:
 	guile 2024/day-09-2.ss
+
+.PHONY: 2024-10-1
+2024-10-1:
+	fpc 2024/day-10-1.p -FEoutput
+	./output/day-10-1
+
+.PHONY: 2024-10-2
+2024-10-2:
+	fpc 2024/day-10-2.p -FEoutput
+	./output/day-10-2

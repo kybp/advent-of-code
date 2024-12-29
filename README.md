@@ -19,3 +19,4 @@ To run all the solutions, you'll need:
 - GHC
 - Java 8+
 - Guile 2.0+
+- Free Pascal
