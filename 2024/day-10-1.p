@@ -3,7 +3,6 @@ program Day10Part1;
 const
    width   = 57;
    height  = 57;
-   newline = #10;
 
 type
    cells    = array [1..width, 1..height] of integer;
