@@ -79,3 +79,13 @@
 2024-10-2:
 	fpc 2024/day-10-2.p -FEoutput
 	./output/day-10-2
+
+.PHONY: 2024-11-1
+2024-11-1:
+	ocamlc 2024/day-11-1.ml -o output/day-11-1
+	./output/day-11-1
+
+.PHONY: 2024-11-2
+2024-11-2:
+	ocamlc 2024/day-11-2.ml -o output/day-11-2
+	./output/day-11-2

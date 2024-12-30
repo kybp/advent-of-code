@@ -1,3 +1,7 @@
 input/
 /output/
 !/output/.keep
+
+# OCaml compiler output
+*.cmi
+*.cmo
