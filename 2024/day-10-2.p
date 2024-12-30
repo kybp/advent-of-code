@@ -15,6 +15,7 @@ var
 
 
 procedure read_grid;
+
 var
    input : text;
    c     : char;
